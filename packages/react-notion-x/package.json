@@ -1,5 +1,5 @@
 {
-  "name": "@areyes-studio/react-notion-x",
+  "name": "areyes-react-notion-x",
   "version": "7.0.0",
   "type": "module",
   "description": "Fast and accurate React renderer for Notion.",
@@ -50,5 +50,6 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
-  }
+  },
+  "gitHead": "6af70ec5c5d5f8f78732eb9dfa25a037de66bbb8"
 }
