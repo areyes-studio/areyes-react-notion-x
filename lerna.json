@@ -1,9 +1,8 @@
 {
   "version": "6.16.2",
   "npmClient": "yarn",
-  "useWorkspaces": true,
+
   "packages": [
-    "packages/*",
-    "examples/*"
+    "packages/react-notion-x"
   ]
 }

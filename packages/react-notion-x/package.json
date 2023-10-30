@@ -1,5 +1,5 @@
 {
-  "name": "react-notion-x",
+  "name": "@areyes-studio/react-notion-x",
   "version": "6.16.1",
   "type": "module",
   "description": "Fast and accurate React renderer for Notion.",
