@@ -1,6 +1,6 @@
 {
   "name": "areyes-react-notion-x",
-  "version": "7.0.2",
+  "version": "7.1.0",
   "type": "module",
   "description": "Fast and accurate React renderer for Notion.",
   "repository": "NotionX/react-notion-x",
