@@ -1,10 +1,8 @@
 import * as React from 'react'
 
 import { normalizeUrl } from 'notion-utils'
-import { ImageState, LazyImageFull } from 'react-lazy-images'
 
 import { useNotionContext } from '../context'
-import { cs } from '../utils'
 
 /**
  * Progressive, lazy images modeled after Medium's LQIP technique.
@@ -62,8 +60,6 @@ export const LazyImage: React.FC<{
   )
 
   if (previewImage) {
-    const aspectRatio = previewImage.originalHeight / previewImage.originalWidth
-
     if (components.Image) {
       // TODO: could try using next/image onLoadComplete to replace LazyImageFull
       // while retaining our blur implementation
@@ -83,59 +79,7 @@ export const LazyImage: React.FC<{
       )
     }
 
-    return (
-      <LazyImageFull src={src} {...rest} experimentalDecode={true}>
-        {({ imageState, ref }) => {
-          const isLoaded = imageState === ImageState.LoadSuccess
-          const wrapperStyle: React.CSSProperties = {
-            width: '100%'
-          }
-          const imgStyle: React.CSSProperties = {}
-
-          if (height) {
-            wrapperStyle.height = height
-          } else {
-            imgStyle.position = 'absolute'
-            wrapperStyle.paddingBottom = `${aspectRatio * 100}%`
-          }
-
-          return (
-            <div
-              className={cs(
-                'lazy-image-wrapper',
-                isLoaded && 'lazy-image-loaded',
-                className
-              )}
-              style={wrapperStyle}
-            >
-              <img
-                className='lazy-image-preview'
-                src={previewImage.dataURIBase64}
-                alt={alt}
-                ref={ref}
-                style={style}
-                decoding='async'
-              />
-
-              <img
-                className='lazy-image-real'
-                src={src}
-                alt={alt}
-                ref={attachZoomRef}
-                style={{
-                  ...style,
-                  ...imgStyle
-                }}
-                width={previewImage.originalWidth}
-                height={previewImage.originalHeight}
-                decoding='async'
-                loading='lazy'
-              />
-            </div>
-          )
-        }}
-      </LazyImageFull>
-    )
+    return <>Lazy Images unsupported</>
   } else {
     // TODO: GracefulImage doesn't seem to support refs, but we'd like to prevent
     // invalid images from loading as error states

@@ -164,7 +164,7 @@
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.17.8.tgz"
   integrity sha512-BoHhDJrJXqcg+ZL16Xv39H9n+AqJ4pcDrQBGZN+wHxIysrLZ3/ECwCBUch/1zUNhnsXULcONU3Ei5Hmkfk6kiQ==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
   version "7.17.8"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.17.8.tgz"
   integrity sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==
@@ -1666,6 +1666,22 @@ are-we-there-yet@~1.1.2:
   dependencies:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
+
+areyes-react-notion-x@^6.16.1:
+  version "7.1.0"
+  dependencies:
+    "@fisch0920/medium-zoom" "^1.0.7"
+    "@matejmazur/react-katex" "^3.1.3"
+    katex "^0.15.3"
+    notion-types "^6.16.0"
+    notion-utils "^6.16.0"
+    prismjs "^1.27.0"
+    react-fast-compare "^3.2.0"
+    react-hotkeys-hook "^3.0.3"
+    react-image "^4.0.3"
+    react-modal "^3.14.3"
+    react-pdf "^5.7.1"
+    react-use "^17.3.1"
 
 arg@^4.1.0:
   version "4.1.3"
@@ -3956,13 +3972,6 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-invariant@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
-  integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
-  dependencies:
-    loose-envify "^1.0.0"
-
 ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.npmjs.org/ip/-/ip-1.1.5.tgz"
@@ -5935,26 +5944,10 @@ react-image@^4.0.3:
   resolved "https://registry.npmjs.org/react-image/-/react-image-4.0.3.tgz"
   integrity sha512-19MUK9u1qaw9xys8XEsVkSpVhHctEBUeYFvrLTe1PN+4w5Co13AN2WA7xtBshPM6SthsOj77SlDrEAeOaJpf7g==
 
-react-intersection-observer@^6.1.0:
-  version "6.4.2"
-  resolved "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-6.4.2.tgz"
-  integrity sha512-gL6YrkhniA0tIbyDbUterzBwKh61vHR520rsKULel5T37gG4YP07wnWI3WoqOcKK5bKAu0PZB2FHD7/OjawN+w==
-  dependencies:
-    "@babel/runtime" "^7.2.0"
-    invariant "^2.2.4"
-
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-lazy-images@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/react-lazy-images/-/react-lazy-images-1.1.0.tgz"
-  integrity sha512-h5DHFhkMJyh2qsDl3hXWu6d+On10FsgHtRJ+BH7xjgsFOvsqaii9CEwEESqPJrrAiHo1qrN1LgzrV8X3zctHKA==
-  dependencies:
-    react-intersection-observer "^6.1.0"
-    unionize "^2.1.2"
 
 react-lifecycles-compat@^3.0.0:
   version "3.0.4"
@@ -7332,11 +7325,6 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
-
-unionize@^2.1.2:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/unionize/-/unionize-2.2.0.tgz"
-  integrity sha512-lHXiL6LPVuRYBGCLOdUd4GMHoAGqM0HtYHAZcA6pUEiwN1nk+LEYlh8bud7saeL0bkFntJzCPEPVVJeFm3Cqsg==
 
 unique-filename@^1.1.1:
   version "1.1.1"
